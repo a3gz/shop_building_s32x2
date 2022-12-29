@@ -13,7 +13,11 @@ I decided to build a custom building with the following characteristics:
 
 ## What's inside
 
-This repository contains everything: the whole versioning history of blend files, baked AO s, UV-layouts, collada files ready to import to SL or OS and the final textures I created for my own use.
+  * Blender files. The whole versioning history of `.blend` files. **Blender 3.0**.
+  * UV-layout files.
+  * Baked AOs. But you can bake your own by changing the settings.
+  * Collada files. Ready to import to SL or OS.
+  * Textures I created for my own use.
 
 The building can be used as-is or as a start point to make something better.
 
@@ -30,6 +34,8 @@ Numbers involved in this building to Second Life as shown in the snapshots:
 
 ## Demo
 
-For the moment, the building can be seen in Second Life in the following location:
+I'm using this building now, so come over and take a look:
 
-http://maps.secondlife.com/secondlife/Nautilus%20-%20Sophonisba/98/160/2032
+http://maps.secondlife.com/secondlife/Nautilus%20-%20Sophonisba/92/160/27
+
+My avatar's name is **Roetal Resident**. 
