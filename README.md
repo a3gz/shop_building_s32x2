@@ -1,5 +1,7 @@
 **Welcome to OfficeBuildingS32x2, the Free Open Source office building for Second Life and Open Simulator**.
 
+*(This is a Shop building, I named it wrong and now it's too late to fix it)*
+
 I created this building becase I wanted to maximize the available space in a 32x32 parcel.
 Eventually I found a great building in the Marketplace that fit but it only covered half the available surface. Larger bulding were longer than 32meters on one side or the other.
 
