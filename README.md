@@ -27,3 +27,9 @@ Numbers involved in this building to Second Life as shown in the snapshots:
 
   * Cost 210 $L
   * Weight: 27 LI
+
+## Demo
+
+For the moment, the building can be seen in Second Life in the following location:
+
+http://maps.secondlife.com/secondlife/Nautilus%20-%20Sophonisba/98/160/2032
