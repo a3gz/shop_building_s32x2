@@ -20,3 +20,10 @@ The building can be used as-is or as a start point to make something better.
 ## What can you do with this?
 
 Do whatever you want with this **except** put it for sale. This can be used as a learning tool or to setaup your own shop or showroom. **Just please, don't turn it into a product**.
+
+## Upload cost
+
+Numbers involved in this building to Second Life as shown in the snapshots:
+
+  * Cost 210 $L
+  * Weight: 27 LI
