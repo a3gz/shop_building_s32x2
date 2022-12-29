@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.0.0 commit date:2021-12-02, commit time:18:35, hash:f1cca3055776</authoring_tool>
+    </contributor>
+    <created>2022-12-28T15:16:39</created>
+    <modified>2022-12-28T15:16:39</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="DivisionWall_Moulding_Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="DivisionWall_Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="DivisionWall_Shadow_Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="DivisionWall_Moulding_Material-material" name="DivisionWall_Moulding_Material">
+      <instance_effect url="#DivisionWall_Moulding_Material-effect"/>
+    </material>
+    <material id="DivisionWall_Material-material" name="DivisionWall_Material">
+      <instance_effect url="#DivisionWall_Material-effect"/>
+    </material>
+    <material id="DivisionWall_Shadow_Material-material" name="DivisionWall_Shadow_Material">
+      <instance_effect url="#DivisionWall_Shadow_Material-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Wall_Inner_division-mesh" name="Wall Inner division">
+      <mesh>
+        <source id="Wall_Inner_division-mesh-positions">
+          <float_array id="Wall_Inner_division-mesh-positions-array" count="90">-14.79 10.58536 6.2 -10.56464 14.79 6.2 -11.24749 10.58536 6.2 -10.56464 11.2682 6.2 -0.129289 -0.6156854 6.2 0.6363961 0.1499997 6.2 -14.79 10.58536 6.499999 -10.56464 14.79 6.499999 -11.24749 10.58536 6.499999 -10.56464 11.2682 6.499999 -0.129289 -0.6156854 6.499999 0.6363961 0.1499997 6.499999 -11.16464 10.98536 6.2 -0.1646444 -0.01464462 6.2 -14.79 10.98536 1.2 -10.96464 14.79 1.2 -10.96464 14.79 6.2 -11.16464 10.98536 1.2 -10.96464 11.18535 1.2 -10.96464 11.18535 6.2 -0.1646444 -0.01464462 1.2 0.03535532 0.1853551 1.2 0.03535532 0.1853551 6.2 -14.79 10.98536 6.2 -10.56464 14.79 1.2 -9.164646 14.79 6.2 -9.164646 14.79 1.2 -14.79 10.58536 1.2 -14.79 9.185357 6.2 -14.79 9.185357 1.2</float_array>
+          <technique_common>
+            <accessor source="#Wall_Inner_division-mesh-positions-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wall_Inner_division-mesh-normals">
+          <float_array id="Wall_Inner_division-mesh-normals-array" count="39">0.7044772 0.7097267 0 1 0 0 -0.7097251 -0.7044788 0 0 -1 0 -8.26776e-7 0 -1 2.42724e-6 0 -1 0 0 -1 -1.06192e-6 0 -1 -0.7071068 -0.7071068 0 0.7071068 0.7071068 0 -0.7097267 -0.7044771 0 2.24446e-7 0 -1 0.7071068 0.7071068 0</float_array>
+          <technique_common>
+            <accessor source="#Wall_Inner_division-mesh-normals-array" count="13" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wall_Inner_division-mesh-map">
+          <float_array id="Wall_Inner_division-mesh-map-array" count="192">0.7274898 0.0847119 0.7417833 0.8366547 0.7274857 0.8366547 0.7899293 0.4187437 0.7756354 0.2509412 0.7899293 0.2509411 0.7610525 0.07396811 0.7753461 0.8259191 0.7610508 0.825919 0.7946941 0.07791531 0.8089881 0.2467046 0.7946942 0.2467046 0.8089881 0.4187437 0.7899293 0.2509411 0.8089881 0.2469939 0.7085044 0.8151402 0.7274898 0.0847119 0.7274857 0.8366547 0.7946941 0.07791531 0.7756356 0.2467047 0.7756354 0.07396805 0.7610508 0.825919 0.7420725 0.09548079 0.7610525 0.07396811 0.2383784 0.7413546 1.4475e-4 0.914091 1.44646e-4 0.7413547 0.2386677 0.9131042 0.4769016 0.7413545 0.4769016 0.9131042 1.44556e-4 1.44601e-4 0.2383784 0.7413546 1.44646e-4 0.7413547 0.2386677 0.7413545 0.4769017 1.44687e-4 0.4769016 0.7413545 0.4769016 0.932163 0.2386677 0.9131042 0.4769016 0.9131042 0.4769016 0.932163 0.2386677 0.9988684 0.2386677 0.932163 1.4475e-4 0.914091 0.2383785 0.9331499 1.4475e-4 0.9331498 0.2383785 0.9331499 1.4472e-4 0.9998553 1.4475e-4 0.9331498 0.7274898 0.0847119 0.7417833 0.08471173 0.7417833 0.8366547 0.7899293 0.4187437 0.7756354 0.4187437 0.7756354 0.2509412 0.7610525 0.07396811 0.7753462 0.07396805 0.7753461 0.8259191 0.7946941 0.07791531 0.8089881 0.07791531 0.8089881 0.2467046 0.8089881 0.4187437 0.7899293 0.4187437 0.7899293 0.2509411 0.7085044 0.8151402 0.7112652 0.07396805 0.7274898 0.0847119 0.7946941 0.07791531 0.7946942 0.2467046 0.7756356 0.2467047 0.7610508 0.825919 0.7448232 0.8366646 0.7420725 0.09548079 0.2383784 0.7413546 0.2383785 0.914091 1.4475e-4 0.914091 0.2386677 0.9131042 0.2386677 0.7413545 0.4769016 0.7413545 1.44556e-4 1.44601e-4 0.2383784 1.4472e-4 0.2383784 0.7413546 0.2386677 0.7413545 0.2386679 1.44601e-4 0.4769017 1.44687e-4 0.4769016 0.932163 0.2386677 0.932163 0.2386677 0.9131042 0.4769016 0.932163 0.4769016 0.9988684 0.2386677 0.9988684 1.4475e-4 0.914091 0.2383785 0.914091 0.2383785 0.9331499 0.2383785 0.9331499 0.2383785 0.9998553 1.4472e-4 0.9998553</float_array>
+          <technique_common>
+            <accessor source="#Wall_Inner_division-mesh-map-array" count="96" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Wall_Inner_division-mesh-vertices">
+          <input semantic="POSITION" source="#Wall_Inner_division-mesh-positions"/>
+        </vertices>
+        <triangles material="DivisionWall_Moulding_Material-material" count="16">
+          <input semantic="VERTEX" source="#Wall_Inner_division-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Wall_Inner_division-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Wall_Inner_division-mesh-map" offset="2" set="0"/>
+          <p>3 0 0 11 0 1 5 0 2 1 1 3 9 1 4 3 1 5 4 2 6 8 2 7 2 2 8 2 3 9 6 3 10 0 3 11 16 4 12 3 4 13 19 4 14 22 5 15 3 5 16 5 5 17 2 6 18 23 6 19 12 6 20 2 7 21 13 7 22 4 7 23 3 0 48 9 0 49 11 0 50 1 1 51 7 1 52 9 1 53 4 10 54 10 10 55 8 10 56 2 3 57 8 3 58 6 3 59 16 6 60 1 6 61 3 6 62 22 11 63 19 11 64 3 11 65 2 6 66 0 6 67 23 6 68 2 6 69 12 6 70 13 6 71</p>
+        </triangles>
+        <triangles material="DivisionWall_Material-material" count="8">
+          <input semantic="VERTEX" source="#Wall_Inner_division-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Wall_Inner_division-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Wall_Inner_division-mesh-map" offset="2" set="0"/>
+          <p>12 3 24 14 3 25 17 3 26 16 1 27 18 1 28 15 1 29 20 8 30 12 8 31 17 8 32 19 9 33 21 9 34 18 9 35 12 3 72 23 3 73 14 3 74 16 1 75 19 1 76 18 1 77 20 8 78 13 8 79 12 8 80 19 12 81 22 12 82 21 12 83</p>
+        </triangles>
+        <triangles material="DivisionWall_Shadow_Material-material" count="8">
+          <input semantic="VERTEX" source="#Wall_Inner_division-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Wall_Inner_division-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Wall_Inner_division-mesh-map" offset="2" set="0"/>
+          <p>24 3 36 16 3 37 15 3 38 24 3 39 25 3 40 1 3 41 14 1 42 0 1 43 27 1 44 0 1 45 29 1 46 27 1 47 24 3 84 1 3 85 16 3 86 24 3 87 26 3 88 25 3 89 14 1 90 23 1 91 0 1 92 0 1 93 28 1 94 29 1 95</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Wall_Inner_division" name="Wall Inner division" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Wall_Inner_division-mesh" name="Wall Inner division">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="DivisionWall_Moulding_Material-material" target="#DivisionWall_Moulding_Material-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="DivisionWall_Material-material" target="#DivisionWall_Material-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="DivisionWall_Shadow_Material-material" target="#DivisionWall_Shadow_Material-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

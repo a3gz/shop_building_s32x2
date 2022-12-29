@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.0.0 commit date:2021-12-02, commit time:18:35, hash:f1cca3055776</authoring_tool>
+    </contributor>
+    <created>2022-12-27T16:23:58</created>
+    <modified>2022-12-27T16:23:58</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Ceiling_Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Roof_Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Roof_Contour_Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="Ceiling_Material-material" name="Ceiling_Material">
+      <instance_effect url="#Ceiling_Material-effect"/>
+    </material>
+    <material id="Roof_Material-material" name="Roof_Material">
+      <instance_effect url="#Roof_Material-effect"/>
+    </material>
+    <material id="Roof_Contour_Material-material" name="Roof_Contour_Material">
+      <instance_effect url="#Roof_Contour_Material-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Ceiling_Roof-mesh" name="Ceiling_Roof">
+      <mesh>
+        <source id="Ceiling_Roof-mesh-positions">
+          <float_array id="Ceiling_Roof-mesh-positions-array" count="120">-15.4 -15.4 6.499999 15.4 15.4 6.499999 15.4 -0.4 6.499999 0.4 -0.4 6.499999 -15.4 -15.4 6.2 0.4 -0.4 6.2 15.4 15.4 6.2 -15.4 15.4 6.2 -0.5500002 0.5500002 6.2 -15.4 15.4 6.499999 -14.45 14.45 6.2 -14.45 14.45 6.499999 -14.45 -14.45 6.2 -14.45 -14.45 6.499999 0.4 -15.4 6.499999 0.4 -15.4 6.2 -0.5500002 0.5500002 6.499999 -0.5500002 -14.45 6.2 -0.5500002 -14.45 6.499999 15.4 -0.4 6.2 14.45 14.45 6.2 14.45 14.45 6.499999 14.45 0.5500002 6.499999 14.45 0.5500002 6.2 -15 -15 7.499999 -15 15 7.499999 15 15 7.499999 0 -15 7.499999 0 15 7.499999 -15 0 7.499999 15 0 7.499999 0 0 7.499999 -15 -15 6.499999 -15 15 6.499999 15 15 6.499999 0 -15 6.499999 0 15 6.499999 -15 0 6.499999 15 0 6.499999 0 0 6.499999</float_array>
+          <technique_common>
+            <accessor source="#Ceiling_Roof-mesh-positions-array" count="40" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Ceiling_Roof-mesh-normals">
+          <float_array id="Ceiling_Roof-mesh-normals-array" count="54">-6.69245e-7 0 1 -5.21038e-7 0 1 1 0 0 0 1 0 0 0 1 0 0 -1 -7.29454e-7 0 -1 0 1 0 0 0 -1 -1 0 0 0 -1 0 1 0 0 1 0 3.17892e-6 1.27072e-7 0 1 -4.68472e-7 0 -1 1.04298e-6 0 -1 -1.01109e-6 0 -1 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#Ceiling_Roof-mesh-normals-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Ceiling_Roof-mesh-map">
+          <float_array id="Ceiling_Roof-mesh-map-array" count="456">0.6697534 0.2848667 0.656921 0.09709423 0.6697539 0.08439785 0.8508736 0.01170188 0.8627018 0.3793848 0.8508737 0.3676825 0.6528682 0.297563 0.656921 0.09709423 0.6569207 0.297563 0.8933327 3.97265e-5 0.900026 0.3793828 0.8933332 0.3794226 0.7693432 0.2954202 0.7652904 0.08425784 0.769342 0.08425778 0.7693432 0.2954202 0.7821754 0.09695464 0.782176 0.2827237 0.7312367 0.2847282 0.7184038 0.09695416 0.7312367 0.08425778 0.6528688 0.09709423 0.6400353 0.2848666 0.6400359 0.08439779 0.8812217 0.3677341 0.8693936 5.10514e-5 0.8812217 0.01175332 0.8445938 0.01173692 0.8508737 0.3676825 0.8445938 0.3677176 0.6740893 0.09709465 0.6781424 0.2828632 0.6740906 0.2828632 0.900026 0.3793828 0.9118534 0.01170212 0.9118534 0.3676811 0.8933332 0.3794226 0.8815045 0.01174199 0.8933327 3.97265e-5 0.8693936 5.10514e-5 0.8627018 0.3793848 0.8627013 0 0.6909755 0.2955595 0.6781417 0.09709459 0.6909751 0.08439779 0.7078605 0.09709423 0.6950277 0.2955595 0.6950276 0.08439779 0.6950276 0.08439779 0.6909755 0.2955595 0.6909751 0.08439779 0.7352893 0.2847282 0.7481217 0.0969541 0.7481221 0.2974244 0.7524576 0.2827238 0.7652904 0.08425784 0.7652907 0.2954202 0.7312367 0.2847282 0.735289 0.08425784 0.7352893 0.2847282 0.6697539 0.08439785 0.6738063 0.2848667 0.6697534 0.2848667 0.7521743 0.0969541 0.7481221 0.2974244 0.7481217 0.0969541 0.786228 0.09695458 0.782176 0.2827237 0.7821754 0.09695464 0.9181332 0.367646 0.9118534 0.01170212 0.9181332 0.01166707 0.6356289 0.4218907 0.9155242 0.6988096 0.6356284 0.6988095 0.6356284 0.6988095 0.9155241 0.9757301 0.6356281 0.97573 0.3557307 0.6988092 0.6356281 0.97573 0.3557302 0.97573 0.9155241 0.9941915 0.6356281 0.97573 0.9155241 0.9757301 0.9341842 0.4218912 0.9155242 0.6988096 0.9155244 0.4218912 0.934184 0.6988098 0.9155241 0.9757301 0.9155242 0.6988096 0.6356281 0.9941916 0.3557302 0.97573 0.6356281 0.97573 0.6169685 0.6988095 0.6356289 0.4218907 0.6356284 0.6988095 0.3557307 0.6803476 0.6356284 0.6988095 0.3557307 0.6988092 0.3370704 0.9757298 0.3557307 0.6988092 0.3557302 0.97573 0.6356289 0.4034293 0.9155244 0.4218912 0.6356289 0.4218907 0.3015874 0.3681286 0.0216906 0.6450489 0.02169066 0.3681286 0.3015874 0.3681286 0.02169054 0.09120851 0.3015873 0.09120851 0.3015874 0.3681286 0.581484 0.09120845 0.581484 0.3681286 0.6697534 0.2848667 0.6569207 0.297563 0.656921 0.09709423 0.8508736 0.01170188 0.8627013 0 0.8627018 0.3793848 0.6528682 0.297563 0.6528688 0.09709423 0.656921 0.09709423 0.8933327 3.97265e-5 0.9000253 0 0.900026 0.3793828 0.7693432 0.2954202 0.7652907 0.2954202 0.7652904 0.08425784 0.7693432 0.2954202 0.769342 0.08425778 0.7821754 0.09695464 0.7312367 0.2847282 0.7184038 0.2974246 0.7184038 0.09695416 0.6528688 0.09709423 0.6528682 0.297563 0.6400353 0.2848666 0.8812217 0.3677341 0.8693942 0.379436 0.8693936 5.10514e-5 0.8445938 0.01173692 0.8508736 0.01170188 0.8508737 0.3676825 0.6740893 0.09709465 0.6781417 0.09709459 0.6781424 0.2828632 0.900026 0.3793828 0.9000253 0 0.9118534 0.01170212 0.8933332 0.3794226 0.8815057 0.367721 0.8815045 0.01174199 0.8693936 5.10514e-5 0.8693942 0.379436 0.8627018 0.3793848 0.6909755 0.2955595 0.6781424 0.2828632 0.6781417 0.09709459 0.7078605 0.09709423 0.7078605 0.2828631 0.6950277 0.2955595 0.6950276 0.08439779 0.6950277 0.2955595 0.6909755 0.2955595 0.7352893 0.2847282 0.735289 0.08425784 0.7481217 0.0969541 0.7524576 0.2827238 0.7524573 0.09695452 0.7652904 0.08425784 0.7312367 0.2847282 0.7312367 0.08425778 0.735289 0.08425784 0.6697539 0.08439785 0.6738063 0.08439779 0.6738063 0.2848667 0.7521743 0.0969541 0.7521743 0.2974244 0.7481221 0.2974244 0.786228 0.09695458 0.786228 0.2827237 0.782176 0.2827237 0.9181332 0.367646 0.9118534 0.3676811 0.9118534 0.01170212 0.6356289 0.4218907 0.9155244 0.4218912 0.9155242 0.6988096 0.6356284 0.6988095 0.9155242 0.6988096 0.9155241 0.9757301 0.3557307 0.6988092 0.6356284 0.6988095 0.6356281 0.97573 0.9155241 0.9941915 0.6356281 0.9941916 0.6356281 0.97573 0.9341842 0.4218912 0.934184 0.6988098 0.9155242 0.6988096 0.934184 0.6988098 0.9341842 0.9757301 0.9155241 0.9757301 0.6356281 0.9941916 0.3557303 0.9941917 0.3557302 0.97573 0.6169685 0.6988095 0.6169688 0.4218907 0.6356289 0.4218907 0.3557307 0.6803476 0.6356284 0.6803479 0.6356284 0.6988095 0.3370704 0.9757298 0.3370707 0.6988092 0.3557307 0.6988092 0.6356289 0.4034293 0.9155245 0.4034296 0.9155244 0.4218912 0.3015874 0.3681286 0.3015873 0.6450489 0.0216906 0.6450489 0.3015874 0.3681286 0.02169066 0.3681286 0.02169054 0.09120851 0.3015874 0.3681286 0.3015873 0.09120851 0.581484 0.09120845</float_array>
+          <technique_common>
+            <accessor source="#Ceiling_Roof-mesh-map-array" count="228" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Ceiling_Roof-mesh-vertices">
+          <input semantic="POSITION" source="#Ceiling_Roof-mesh-positions"/>
+        </vertices>
+        <triangles material="Ceiling_Material-material" count="6">
+          <input semantic="VERTEX" source="#Ceiling_Roof-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Ceiling_Roof-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Ceiling_Roof-mesh-map" offset="2" set="0"/>
+          <p>39 5 105 32 5 106 37 5 107 39 5 108 33 5 109 36 5 110 39 5 111 34 5 112 38 5 113 39 5 219 35 5 220 32 5 221 39 5 222 37 5 223 33 5 224 39 5 225 36 5 226 34 5 227</p>
+        </triangles>
+        <triangles material="Roof_Material-material" count="22">
+          <input semantic="VERTEX" source="#Ceiling_Roof-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Ceiling_Roof-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Ceiling_Roof-mesh-map" offset="2" set="0"/>
+          <p>30 4 72 28 4 73 31 4 74 31 4 75 25 4 76 29 4 77 27 4 78 29 4 79 24 4 80 33 9 81 29 9 82 25 9 83 34 7 84 28 7 85 26 7 86 36 7 87 25 7 88 28 7 89 37 9 90 24 9 91 29 9 92 39 10 93 30 10 94 31 10 95 35 2 96 31 2 97 27 2 98 32 10 99 27 10 100 24 10 101 38 2 102 26 2 103 30 2 104 30 4 186 26 4 187 28 4 188 31 4 189 28 4 190 25 4 191 27 4 192 31 4 193 29 4 194 33 9 195 37 9 196 29 9 197 34 7 198 36 7 199 28 7 200 36 7 201 33 7 202 25 7 203 37 9 204 32 9 205 24 9 206 39 10 207 38 10 208 30 10 209 35 2 210 39 2 211 31 2 212 32 10 213 35 10 214 27 10 215 38 2 216 34 2 217 26 2 218</p>
+        </triangles>
+        <triangles material="Roof_Contour_Material-material" count="48">
+          <input semantic="VERTEX" source="#Ceiling_Roof-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Ceiling_Roof-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Ceiling_Roof-mesh-map" offset="2" set="0"/>
+          <p>18 0 0 3 0 1 16 0 2 11 1 3 0 1 4 13 1 5 15 2 6 3 2 7 14 2 8 7 3 9 1 3 10 6 3 11 2 2 12 6 2 13 1 2 14 2 4 15 21 4 16 22 4 17 5 5 18 23 5 19 19 5 20 5 5 21 17 5 22 8 5 23 12 6 24 7 6 25 10 6 26 10 2 27 13 2 28 12 2 29 12 7 30 18 7 31 17 7 32 1 4 33 11 4 34 21 4 35 6 8 36 10 8 37 7 8 38 7 9 39 0 9 40 9 9 41 14 4 42 13 4 43 0 4 44 12 5 45 15 5 46 4 5 47 4 10 48 14 10 49 0 10 50 3 4 51 22 4 52 16 4 53 23 5 54 6 5 55 19 5 56 5 10 57 2 10 58 3 10 59 16 9 60 17 9 61 18 9 62 23 7 63 16 7 64 22 7 65 20 9 66 22 9 67 21 9 68 20 10 69 11 10 70 10 10 71 18 4 114 14 4 115 3 4 116 11 4 117 9 4 118 0 4 119 15 11 120 5 11 121 3 11 122 7 7 123 9 7 124 1 7 125 2 12 126 19 12 127 6 12 128 2 13 129 1 13 130 21 13 131 5 5 132 8 5 133 23 5 134 5 14 135 15 14 136 17 14 137 12 15 138 4 15 139 7 15 140 10 2 141 11 2 142 13 2 143 12 7 144 13 7 145 18 7 146 1 4 147 9 4 148 11 4 149 6 5 150 20 5 151 10 5 152 7 9 153 4 9 154 0 9 155 14 4 156 18 4 157 13 4 158 12 5 159 17 5 160 15 5 161 4 10 162 15 10 163 14 10 164 3 4 165 2 4 166 22 4 167 23 16 168 20 16 169 6 16 170 5 17 171 19 17 172 2 17 173 16 9 174 8 9 175 17 9 176 23 7 177 8 7 178 16 7 179 20 9 180 23 9 181 22 9 182 20 10 183 21 10 184 11 10 185</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Ceiling_Roof" name="Ceiling_Roof" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Ceiling_Roof-mesh" name="Ceiling_Roof">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Ceiling_Material-material" target="#Ceiling_Material-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="Roof_Material-material" target="#Roof_Material-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="Roof_Contour_Material-material" target="#Roof_Contour_Material-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

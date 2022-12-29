@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.0.0 commit date:2021-12-02, commit time:18:35, hash:f1cca3055776</authoring_tool>
+    </contributor>
+    <created>2022-12-27T11:01:43</created>
+    <modified>2022-12-27T11:01:43</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Foundation_Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Foundation_ContourDetail_Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="Foundation_Material-material" name="Foundation_Material">
+      <instance_effect url="#Foundation_Material-effect"/>
+    </material>
+    <material id="Foundation_ContourDetail_Material-material" name="Foundation_ContourDetail_Material">
+      <instance_effect url="#Foundation_ContourDetail_Material-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Foundation_Physics-mesh" name="Foundation Physics">
+      <mesh>
+        <source id="Foundation_Physics-mesh-positions">
+          <float_array id="Foundation_Physics-mesh-positions-array" count="33">-15 -15 1.2 -15 15 1.2 15 15 1.2 0 -15 1.2 15 0 1.2 0 0 1.2 -15 -15 0 -15 15 0 15 15 0 0 -15 0 15 0 0</float_array>
+          <technique_common>
+            <accessor source="#Foundation_Physics-mesh-positions-array" count="11" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Foundation_Physics-mesh-normals">
+          <float_array id="Foundation_Physics-mesh-normals-array" count="15">0 0 1 0 -1 0 -1 0 0 0 1 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#Foundation_Physics-mesh-normals-array" count="5" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Foundation_Physics-mesh-map">
+          <float_array id="Foundation_Physics-mesh-map-array" count="60">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#Foundation_Physics-mesh-map-array" count="30" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Foundation_Physics-mesh-vertices">
+          <input semantic="POSITION" source="#Foundation_Physics-mesh-positions"/>
+        </vertices>
+        <triangles material="Foundation_Material-material" count="10">
+          <input semantic="VERTEX" source="#Foundation_Physics-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Foundation_Physics-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Foundation_Physics-mesh-map" offset="2" set="0"/>
+          <p>2 0 0 5 0 1 4 0 2 5 0 3 0 0 4 3 0 5 5 1 6 10 1 7 4 1 8 0 1 9 6 1 10 3 1 11 1 2 12 7 2 13 0 2 14 1 3 15 2 3 16 7 3 17 5 4 18 3 4 19 9 4 20 2 4 21 4 4 22 8 4 23 2 0 24 1 0 25 5 0 26 5 0 27 1 0 28 0 0 29</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Foundation_Physics" name="Foundation Physics" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Foundation_Physics-mesh" name="Foundation Physics">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Foundation_Material-material" target="#Foundation_Material-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="Foundation_ContourDetail_Material-material" target="#Foundation_ContourDetail_Material-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
