@@ -1,4 +1,4 @@
-**Welcome to OfficeBuildingS32x2, the Free Open Source office building for Second Life and Open Simulator**.
+**Welcome to OfficeBuildingS32x2, the Free Open Source shop building for Second Life and Open Simulator**.
 
 *(This is a Shop building, I named it wrong and now it's too late to fix it)*
 
